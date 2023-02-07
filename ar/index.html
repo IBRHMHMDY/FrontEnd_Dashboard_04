@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard 04</title>
+      <!-- Material Icons CDN -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+      <!-- Google Fonts Poppins -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- Styles CSS -->
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <nav>
+         <div class="container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <div class="search-bar">
+               <span class="material-icons-sharp">search</span>
+               <input type="search" placeholder="بحث...">
+            </div>
+            <div class="profile-area">
+               <div class="btn-theme">
+                  <span class="material-icons-sharp">dark_mode</span>
+                  <span class="material-icons-sharp active">light_mode</span>
+               </div>
+               <div class="btn-lang">
+                  <a href="../index.html">EN</a>
+               </div>
+               <div class="profile">
+                  <div class="profile-photo">
+                     <img src="images/profile-1.jpg" alt="">
+                  </div>
+                  <h5>إبراهيم</h5>
+                  <span class="material-icons-sharp">expand_more</span>
+               </div>
+               <button id="btn-menu">
+                  <span class="material-icons-sharp">menu</span>
+               </button>
+
+            </div>
+         </div>
+      </nav>
+      <!-- #Nav -->
+
+      <main>
+         <aside>
+            <button id="btn-close">
+               <span class="material-icons-sharp">close</span>
+            </button>
+
+            <div class="sidebar">
+               <a href="#" class="active">
+                  <span class="material-icons-sharp">dashboard</span>
+                  <h4>لوحة القيادة</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">currency_exchange</span>
+                  <h4>التبادلات</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">account_balance_wallet</span>
+                  <h4>المحفظة</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">payment</span>
+                  <h4>المعاملات</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">pie_chart</span>
+                  <h4>إحصائيات</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">message</span>
+                  <h4>الرسائل</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">help_center</span>
+                  <h4>مركز المساعدة</h4>
+               </a>
+               <a href="#">
+                  <span class="material-icons-sharp">settings</span>
+                  <h4>الإعدادات</h4>
+               </a>
+            </div>
+            <!-- #Sidebar -->
+
+            <div class="updates">
+               <span class="material-icons-sharp">update</span>
+               <h4>تحديث متاح</h4>
+               <p>تحديثات الامان</p>
+               <p>تحديثات عامة</p>
+               <a href="#">التحديث الآن</a>
+            </div>
+         </aside>
+         <!-- #ASide -->
+
+         <section class="middle">
+            <div class="header">
+               <h1>نظرة عامة</h1>
+               <input type="date">
+            </div>
+            <div class="cards">
+               <div class="card">
+                  <div class="top">
+                     <div class="left">
+                        <img src="images/BTC.png" alt="BTC">
+                        <h2>BTC</h2>
+                     </div>
+                     <div class="right">
+                        <img src="images/visa.png" alt="Visa Card">
+                     </div>
+                  </div>
+                  <div class="middle">
+                     <h1>$827,25</h1>
+                     <div class="chip">
+                        <img src="images/card chip.png" alt="Card chip" >
+                     </div>
+                  </div>
+                  <div class="bottom">
+                     <div class="left">
+                        <small>حامل البطاقة</small>
+                        <h5>JOHN DOE</h5>
+                     </div>
+                     <div class="right">
+                        <div class="expiry">
+                           <small>الصلاحية</small>
+                           <h5>08/24</h5>
+                        </div>
+                        <div class="cvv">
+                           <small>CVV</small>
+                           <h5>123</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #Card 1-->
+               <div class="card">
+                  <div class="top">
+                     <div class="left">
+                        <img src="images/ETH.png" alt="BTC">
+                        <h2>ETH</h2>
+                     </div>
+                     <div class="right">
+                        <img src="images/master card.png" alt="Visa Card">
+                     </div>
+                  </div>
+                  <div class="middle">
+                     <h1>$827,25</h1>
+                     <div class="chip">
+                        <img src="images/card chip.png" alt="Card chip">
+                     </div>
+                  </div>
+                  <div class="bottom">
+                     <div class="left">
+                        <small>حامل البطاقة</small>
+                        <h5>JOHN DOE</h5>
+                     </div>
+                     <div class="right">
+                        <div class="expiry">
+                           <small>الصلاحية</small>
+                           <h5>08/24</h5>
+                        </div>
+                        <div class="cvv">
+                           <small>CVV</small>
+                           <h5>123</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #Card 2-->
+               <div class="card">
+                  <div class="top">
+                     <div class="left">
+                        <img src="images/BTC.png" alt="BTC">
+                        <h2>BTC</h2>
+                     </div>
+                     <div class="right">
+                        <img src="images/visa.png" alt="Visa Card">
+                     </div>
+                  </div>
+                  <div class="middle">
+                     <h1>$827,25</h1>
+                     <div class="chip">
+                        <img src="images/card chip.png" alt="Card chip">
+                     </div>
+                  </div>
+                  <div class="bottom">
+                     <div class="left">
+                        <small>حامل البطاقة</small>
+                        <h5>JOHN DOE</h5>
+                     </div>
+                     <div class="right">
+                        <div class="expiry">
+                           <small>الصلاحية</small>
+                           <h5>08/24</h5>
+                        </div>
+                        <div class="cvv">
+                           <small>CVV</small>
+                           <h5>123</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #Card 3-->
+            </div>
+            <!-- #Cards -->
+            
+            <div class="monthly-report">
+               <div class="report">
+                  <h3>الدخل</h3>
+                  <div>
+                     <details>
+                        <h1>$29,023</h1>
+                        <h6 class="success">+3.5%</h6>
+                     </details>
+                     <p class="text-muted">مقارنة بـ 112458 دولار في الشهر الماضي</p>
+                  </div>
+               </div>
+               <div class="report">
+                  <h3>المصروفات</h3>
+                  <div>
+                     <details>
+                        <h1>$29,023</h1>
+                        <h6 class="danger">-3.5%</h6>
+                     </details>
+                     <p class="text-muted">مقارنة بـ 112552 دولار في الشهر الماضي</p>
+                  </div>
+               </div>
+               <div class="report">
+                  <h3>كاش باك</h3>
+                  <div>
+                     <details>
+                        <h1>$29,023</h1>
+                        <h6 class="success">+3.5%</h6>
+                     </details>
+                     <p class="text-muted">مقارنة بـ 5542 دولار في الشهر الماضي</p>
+                  </div>
+               </div>
+               <div class="report">
+                  <h3>التداول</h3>
+                  <div>
+                     <details>
+                        <h1>$29,023</h1>
+                        <h6 class="danger">-3.5%</h6>
+                     </details>
+                     <p class="text-muted">مقارنة بـ 25112 دولار في الشهر الماضي</p>
+                  </div>
+               </div>
+            </div>
+            <!-- #Monthly Report -->
+
+            <div class="fast-payment">
+               <h2>المدفوعات</h2>
+               <div class="badges">
+                  <div class="badge">
+                     <span class="material-icons-sharp">add</span>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-primary"></span>
+                     <div>
+                        <h5>دورات</h5>
+                        <h4>$50</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-success"></span>
+                     <div>
+                        <h5>إنترنت</h5>
+                        <h4>$40</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-primary"></span>
+                     <div>
+                        <h5>غاز</h5>
+                        <h4>$190</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-danger"></span>
+                     <div>
+                        <h5>أفلام</h5>
+                        <h4>$50</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-primary"></span>
+                     <div>
+                        <h5>تعليم</h5>
+                        <h4>$990</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-primary"></span>
+                     <div>
+                        <h5>كهرباء</h5>
+                        <h4>$109</h4>
+                     </div>
+                  </div>
+                  <div class="badge">
+                     <span class="bg-success"></span>
+                     <div>
+                        <h5>طعام</h5>
+                        <h4>$35</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- #Fast Payment -->
+
+            <canvas id="chart"></canvas>
+            <!-- #Charts -->
+         </section>
+         <!-- #Section Middle -->
+
+         <section class="right">
+            <div class="investments">
+               <div class="header">
+                  <h2>الإستثمار</h2>
+                  <a href="#">المزيد <span class="material-icons-sharp">chevron_left</span></a>
+               </div>
+               <div class="investment">
+                  <img src="images/uniliver.png" alt="">
+                  <h4>Uniliver</h4>
+                  <div class="date-time">
+                     <p>7 Feb, 2023</p>
+                     <small class="text-muted">9:15pm</small>
+                  </div>
+                  <div class="bonds">
+                     <p>1024</p>
+                     <small class="text-muted">Bonds</small>
+                  </div>
+                  <div class="amount">
+                     <h4>$20,330</h4>
+                     <small class="danger">-4.27%</small>
+                  </div>
+               </div>
+               <!-- #Investment -->
+               <div class="investment">
+                  <img src="images/tesla.png" alt="">
+                  <h4>Tesla</h4>
+                  <div class="date-time">
+                     <p>7 Feb, 2023</p>
+                     <small class="text-muted">11:19pm</small>
+                  </div>
+                  <div class="bonds">
+                     <p>1024</p>
+                     <small class="text-muted">Bonds</small>
+                  </div>
+                  <div class="amount">
+                     <h4>$20,330</h4>
+                     <small class="danger">-4.27%</small>
+                  </div>
+               </div>
+               <!-- #Investment -->
+               <div class="investment">
+                  <img src="images/monster.png" alt="">
+                  <h4>Monster</h4>
+                  <div class="date-time">
+                     <p>7 Feb, 2023</p>
+                     <small class="text-muted">9:15pm</small>
+                  </div>
+                  <div class="bonds">
+                     <p>1024</p>
+                     <small class="text-muted">Bonds</small>
+                  </div>
+                  <div class="amount">
+                     <h4>$20,330</h4>
+                     <small class="success">+36.27%</small>
+                  </div>
+               </div>
+               <!-- #Investment -->
+               <div class="investment">
+                  <img src="images/mcdonalds.png" alt="">
+                  <h4>Mcdonalds</h4>
+                  <div class="date-time">
+                     <p>7 Feb, 2023</p>
+                     <small class="text-muted">9:15pm</small>
+                  </div>
+                  <div class="bonds">
+                     <p>1024</p>
+                     <small class="text-muted">Bonds</small>
+                  </div>
+                  <div class="amount">
+                     <h4>$20,330</h4>
+                     <small class="danger">-4.27%</small>
+                  </div>
+               </div>
+               <!-- #Investment -->
+            </div>
+            <!-- #Investments -->
+
+            <div class="recent-transactions">
+               <div class="header">
+                  <h2>المعاملات الحالية</h2>
+                  <a href="#">المزيد <span class="material-icons-sharp">chevron_left</span></a>
+               </div>
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-purple">
+                        <span class="material-icons-sharp purple">headphones</span>
+                     </div>
+                     <div class="details">
+                        <h4>أغانى</h4>
+                        <p>20-11-2022</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-purple">
+                        <img src="images/visa.png" alt="Visa">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Credit Card</small>
+                     </div>
+                  </div>
+                  <h4>$20</h4>
+               </div>
+               <!-- #Transaction -->
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-danger">
+                        <span class="material-icons-sharp danger">shopping_bag</span>
+                     </div>
+                     <div class="details">
+                        <h4>تسوق</h4>
+                        <p>19-5-2022</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-danger">
+                        <img src="images/master card.png" alt="Master Card">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Master Card</small>
+                     </div>
+                  </div>
+                  <h4 class="danger">-$20</h4>
+               </div>
+               <!-- #Transaction -->
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-primary">
+                        <span class="material-icons-sharp primary">sports_esports</span>
+                     </div>
+                     <div class="details">
+                        <h4>ألعاب</h4>
+                        <p>15-12-2022</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-primary">
+                        <img src="images/master card.png" alt="Master Card">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Master Card</small>
+                     </div>
+                  </div>
+                  <h4>$20</h4>
+               </div>
+               <!-- #Transaction -->
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-success">
+                        <span class="material-icons-sharp success">restaurant</span>
+                     </div>
+                     <div class="details">
+                        <h4>مطعم</h4>
+                        <p>15-12-2022</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-success">
+                        <img src="images/visa.png" alt="Visa Card">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Credit Card</small>
+                     </div>
+                  </div>
+                  <h4>$20</h4>
+               </div>
+               <!-- #Transaction -->
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-success">
+                        <span class="material-icons-sharp success">fitness_center</span>
+                     </div>
+                     <div class="details">
+                        <h4>رياضة</h4>
+                        <p>1-1-2023</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-success">
+                        <img src="images/master card.png" alt="Master Card">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Master Card</small>
+                     </div>
+                  </div>
+                  <h4>$20</h4>
+               </div>
+               <!-- #Transaction -->
+               <div class="transaction">
+                  <div class="service">
+                     <div class="icon bg-light-danger">
+                        <span class="material-icons-sharp danger">medication</span>
+                     </div>
+                     <div class="details">
+                        <h4>صيدلية</h4>
+                        <p>22-6-2022</p>
+                     </div>
+                  </div>
+                  <div class="card-details">
+                     <div class="card bg-danger">
+                        <img src="images/visa.png" alt="Visa Card">
+                     </div>
+                     <div class="details">
+                        <p>*2757</p>
+                        <small class="text-muted">Credit Card</small>
+                     </div>
+                  </div>
+                  <h4 class="danger">-$20</h4>
+               </div>
+               <!-- #Transaction -->
+            </div>
+
+         </section>
+         <!-- #Section Right -->
+      </main>
+      <!-- #Main -->
+
+      <!-- ChartJS Library From CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- Scripts File -->
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

@@ -1,0 +1,654 @@
+:root {
+  --color-white: #fff;
+  --color-light: #f0eff5;
+  --color-light-gray: #86848c;
+  --color-dark: #27282f;
+  --color-dark-gray: #56555e;
+  --color-primary: rgb(71,7,234);
+  --color-success: rgb(34,202,75);
+  --color-danger: rgb(255,67,54);
+  --color-warning: rgb(234,181,7);
+  --color-purple: rgb(160,99,245);
+  --color-light-primary: rgba(71,7,234,0.2);
+  --color-light-success: rgba(34,202,75, 0.2);
+  --color-light-danger: rgba(255,67,54,0.2);
+  --color-light-purple: rgba(160,99,245,0.2);
+  --padding-1: 1rem;
+  --padding-2: 8rem;
+  --card-padding: 1.6rem;
+  --border-radius-1: 1rem;
+  --border-radius-2: 6px;
+  --card-border-radius: 1.6rem;
+}
+
+.dark {
+  --color-white: #131316;
+  --color-light: #23232a;
+  --color-dark: #ddd;
+  --color-dark-gray: #adacb5;
+}
+
+body.dark .profile-area .btn-lang a {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background: var(--color-light);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark);
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.76rem;
+}
+
+small {
+  font-size: 0.77rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.86rem;
+  color: var(--color-dark-gray);
+}
+
+.text-muted {
+  color: var(--color-light-gray);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.purple {
+  color: var(--color-purple);
+}
+
+.bg-primary {
+  background: var(--color-primary);
+  box-shadow: 0 0.8rem 0.8rem var(--color-light-primary);
+}
+
+.bg-success {
+  background: var(--color-success);
+  box-shadow: 0 0.8rem 0.8rem var(--color-light-success);
+}
+
+.bg-danger {
+  background: var(--color-danger);
+  box-shadow: 0 0.8rem 0.8rem var(--color-light-danger);
+}
+
+.bg-purple {
+  background: var(--color-purple);
+  box-shadow: 0 0.8rem 0.8rem var(--color-light-purple);
+}
+
+.bg-dark {
+  background: var(--color-dark);
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.bg-light-primary {
+  background: var(--color-light-primary);
+}
+
+.bg-light-success {
+  background: var(--color-light-success);
+}
+
+.bg-light-danger {
+  background: var(--color-light-danger);
+}
+
+.bg-light-purple {
+  background: var(--color-light-purple);
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 0;
+  background: var(--color-white);
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+nav img.logo {
+  width: 7rem;
+}
+nav .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: 15%;
+  width: 32vw;
+  border-radius: var(--border-radius-2);
+  background: var(--color-light);
+  color: var(--color-light-gray);
+  padding: 0.5rem var(--card-padding);
+}
+nav .search-bar input[type=search] {
+  width: 100%;
+  background: transparent;
+  color: var(--color-dark);
+}
+nav .search-bar input[type=search]::-moz-placeholder {
+  color: var(--color-dark-gray);
+}
+nav .search-bar input[type=search]::placeholder {
+  color: var(--color-dark-gray);
+}
+nav .profile-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+nav .profile-area .btn-theme {
+  display: flex;
+  width: 5rem;
+  height: 2rem;
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+nav .profile-area .btn-theme span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  font-size: 1.3rem;
+}
+nav .profile-area .btn-theme .active {
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: var(--border-radius-2);
+}
+nav .profile-area .btn-lang {
+  color: var(--color-dark-gray);
+  font-size: 1.3rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+nav .profile-area .btn-lang:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+nav .profile-area .btn-lang a {
+  color: black;
+}
+nav .profile-area .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .profile-area .profile-photo {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+nav .profile-area button {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 16rem auto 30rem;
+  gap: 2rem;
+  width: 96%;
+  margin: 1rem auto 4rem;
+}
+main aside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 88vh;
+}
+main aside button#btn-close {
+  display: none;
+}
+main aside .sidebar a {
+  display: flex;
+  align-items: center;
+  height: 4.2rem;
+  gap: 1.2rem;
+  position: relative;
+  color: var(--color-light-gray);
+}
+main aside .sidebar a span {
+  margin-right: 3rem;
+  font-size: 1.7rem;
+  transition: all 300ms ease;
+}
+main aside .sidebar a.active {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+main aside .sidebar a.active:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--color-primary);
+}
+main aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+main aside .sidebar a:hover span {
+  margin-right: 2rem;
+}
+main aside .sidebar h4 {
+  font-weight: 500;
+}
+main aside .updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--card-padding);
+  background: var(--color-white);
+  border-radius: var(--border-radius-1);
+}
+main aside .updates span {
+  font-size: 2.8rem;
+}
+main aside .updates h4 {
+  font-size: 1.2rem;
+  margin: 0.6rem 0;
+}
+main aside .updates p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main aside .updates a {
+  display: block;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-1);
+  width: 100%;
+  padding: 0.8rem 0;
+  margin-top: 1rem;
+  transition: all 300ms ease;
+}
+main aside .updates a:hover {
+  box-shadow: 0 1rem 2rem var(--color-light-primary);
+}
+main section.middle .header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main section.middle .header input[type=date] {
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius-2);
+  background: var(--color-white);
+  color: var(--color-dark-gray);
+}
+main section.middle .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+main section.middle .cards .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 16rem;
+  min-width: 22rem;
+  color: white;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  transition: all 300ms ease;
+}
+main section.middle .cards .card:nth-child(1) {
+  background: linear-gradient(#ff796f, #bd261b);
+  box-shadow: 0 2rem 3rem var(--color-light-danger);
+}
+main section.middle .cards .card:nth-child(2) {
+  background: linear-gradient(#7f8191, #27282f);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+main section.middle .cards .card:nth-child(3) {
+  background: linear-gradient(#5d70ff, #5719c2);
+  box-shadow: 0 2rem 3rem var(--color-light-primary);
+}
+main section.middle .cards .card:hover {
+  box-shadow: none;
+}
+main section.middle .cards .card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.middle .cards .card .top .left {
+  display: flex;
+  gap: 1.2rem;
+}
+main section.middle .cards .card .top .left h2 {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+main section.middle .cards .card .top .left img {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid white;
+  border-radius: var(--border-radius-2);
+  padding: 0.4rem;
+}
+main section.middle .cards .card .top .right img {
+  width: 3.5rem;
+}
+main section.middle .cards .card .middle {
+  display: flex;
+  justify-content: space-between;
+}
+main section.middle .cards .card .middle .chip {
+  width: 3.5rem;
+}
+main section.middle .cards .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main section.middle .cards .card .bottom .right {
+  display: flex;
+  gap: 2rem;
+}
+main section.middle .monthly-report {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+main section.middle .monthly-report h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+main section.middle .monthly-report details {
+  cursor: pointer;
+}
+main section.middle .fast-payment {
+  display: flex;
+  align-self: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+main section.middle .fast-payment .badges {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 1rem;
+}
+main section.middle .fast-payment .badges .badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem var(--card-padding);
+  background: var(--color-white);
+  border-radius: var(--border-radius-2);
+  transition: all 300ms ease;
+}
+main section.middle .fast-payment .badges .badge:hover {
+  box-shadow: 0 0 1.5rem var(--color-light-primary);
+  cursor: pointer;
+}
+main section.middle .fast-payment .badges .badge span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+main section.middle .fast-payment .badges .badge:first-child span {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.5rem;
+}
+main section.middle .fast-payment .badges .badge div {
+  display: flex;
+  align-self: center;
+  gap: 2rem;
+}
+main section.middle canvas#chart {
+  background: var(--color-white);
+  max-width: 100%;
+  margin-top: 2rem;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+main section.right .investments {
+  margin-top: 2rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+main section.right .investments img {
+  width: 2.4rem;
+}
+main section.right .investments .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--card-padding);
+  padding-bottom: 1rem;
+}
+main section.right .investments .header a {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+}
+main section.right .investments .investment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--card-padding);
+  border-bottom: 1px solid var(--color-light);
+  transition: all 300ms ease;
+}
+main section.right .investments .investment:last-child {
+  border: none;
+}
+main section.right .investments .investment:hover {
+  background: var(--color-light);
+  cursor: pointer;
+}
+main section.right .recent-transactions {
+  margin-top: 2rem;
+}
+main section.right .recent-transactions .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--card-padding);
+  padding-bottom: 1rem;
+}
+main section.right .recent-transactions .header a {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+}
+main section.right .recent-transactions img {
+  width: 2.2rem;
+}
+main section.right .recent-transactions .transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--card-border-radius);
+  padding: 1.5rem var(--card-padding);
+}
+main section.right .recent-transactions .transaction:hover {
+  background: var(--color-white);
+  cursor: pointer;
+}
+main section.right .recent-transactions .transaction .service {
+  display: flex;
+  gap: 1rem;
+}
+main section.right .recent-transactions .transaction .service .icon {
+  display: flex;
+  align-items: center;
+  padding: var(--padding-1);
+  border-radius: var(--border-radius-1);
+}
+main section.right .recent-transactions .transaction .card-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main section.right .recent-transactions .transaction .card-details .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.6rem;
+  height: 3rem;
+  border-radius: var(--border-radius-2);
+}
+
+@media screen and (max-width: 1024px) {
+  nav .search-bar {
+    display: none;
+  }
+  nav .profile-area {
+    gap: 2rem;
+  }
+  nav .profile-area button#btn-menu {
+    display: inline;
+    background: transparent;
+    color: var(--color-dark);
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  main aside {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 22rem;
+    height: 100vh;
+    z-index: 10;
+    background: var(--color-white);
+    box-shadow: 2rem 0 2rem var(--color-light-primary);
+    display: none;
+    animation: showSidebar 500ms ease forwards;
+  }
+  main aside button#btn-close {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 4;
+    background: transparent;
+    color: var(--color-dark);
+  }
+  main aside button:hover {
+    cursor: pointer;
+  }
+  main aside .sidebar {
+    margin-top: 4rem;
+  }
+  main aside .updates {
+    display: none;
+  }
+  main section.middle .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  main canvas {
+    margin: 3rem 0 1rem;
+  }
+  main section.right .recent-transactions {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .profile-area {
+    gap: 2.6rem;
+  }
+  nav .profile-area .profile h5, nav .profile-area .profile span {
+    display: none;
+  }
+  main section.middle .fast-payment {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    gap: 1.4rem;
+  }
+  main section.middle .cards {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes showSidebar {
+  to {
+    right: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
